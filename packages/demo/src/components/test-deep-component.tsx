@@ -18,11 +18,11 @@ export class TestDeepComponent {
     return (
       <div>
         <pre>
-          <b>this.history</b>:<br />
+          <b>this.history</b>:<br/>
           {JSON.stringify(this.history, null, 2)}
         </pre>
         <pre>
-          <b>this.location</b>:<br />
+          <b>this.location</b>:<br/>
           {JSON.stringify(this.location, null, 2)}
         </pre>
         <button onClick={() => this.history ? this.history.push('/') : null}> Back Home</button>
