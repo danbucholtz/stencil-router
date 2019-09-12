@@ -36,11 +36,11 @@ export class TestDemoThree {
           </pre>,
           <pre>
             <b>props.history.location</b>:<br/>
-            {JSON.stringify(this.history ? this.history.location : {}, null, 2)}
+            {JSON.stringify(this.history ? this.history.location: {}, null, 2)}
           </pre>,
           <pre>
             <b>props.history.location.state</b>:<br/>
-            {JSON.stringify(this.history ? this.history.location.state : {}, null, 2)}
+            {JSON.stringify(this.history ? this.history.location.state: {}, null, 2)}
           </pre>
         </div>
       }></stencil-route>,
@@ -59,8 +59,8 @@ export class TestDemoThree {
             {JSON.stringify(this.match, null, 2)}
           </pre>,
           <pre>
-            <b>props.history.location</b>:<br />
-            {JSON.stringify(this.history ? this.history.location : {}, null, 2)}
+            <b>props.history.location</b>:<br/>
+            {JSON.stringify(this.history ? this.history.location: {}, null, 2)}
           </pre>
         </div>
       }></stencil-route>
