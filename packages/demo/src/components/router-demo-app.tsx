@@ -61,7 +61,7 @@ export class RouterDemoApp {
 
             <stencil-route url="/demo3" routeRender={({ history, match, pages }) =>
               <div class="content-holder">
-                <test-demo-three {...{ history, match, pages }}></test-demo-three>
+                <test-demo-three {...{history, match, pages}}></test-demo-three>
               </div>
             }></stencil-route>
 
