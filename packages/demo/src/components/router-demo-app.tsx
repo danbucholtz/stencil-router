@@ -1,7 +1,7 @@
 import '@stencil/router';
 import { Component, FunctionalComponent, h } from '@stencil/core';
 
-const PrivateRoute: FunctionalComponent<{ url: string, routeRender: Function }> = ({ url, routeRender }) => (
+const PrivateRoute: FunctionalComponent<{url: string, routeRender: Function }> = ({ url, routeRender }) => (
   <stencil-route url={url} routeRender={
     ({ history, match, pages }) => {
       if ((window as any).userAuthenticated) {
@@ -9,7 +9,7 @@ const PrivateRoute: FunctionalComponent<{ url: string, routeRender: Function }> 
       }
       return <stencil-router-redirect url="/"></stencil-router-redirect>;
     }
-  } />
+  }/>
 )
 
 
