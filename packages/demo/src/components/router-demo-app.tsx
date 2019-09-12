@@ -67,7 +67,7 @@ export class RouterDemoApp {
 
             <stencil-route url="/demo4" routeRender={({ history, match, pages }) =>
               <div class="content-holder">
-                <test-demo-four {...{ history, match, pages }}></test-demo-four>
+                <test-demo-four {...{history, match, pages}}></test-demo-four>
               </div>
             }></stencil-route>
 
@@ -79,7 +79,7 @@ export class RouterDemoApp {
 
             <stencil-route url="/demo6" routeRender={({ history, match, pages }) =>
               <div class="content-holder">
-                <test-demo-six {...{ history, match, pages }}></test-demo-six>
+                <test-demo-six {...{history, match, pages}}></test-demo-six>
               </div>
             }></stencil-route>
 
@@ -104,7 +104,7 @@ export class RouterDemoApp {
 
             <stencil-route url="/route-guard" routeRender={({ history, match, pages }) =>
               <div class="content-holder">
-                <test-route-guard {...{ history, match, pages }}></test-route-guard>
+                <test-route-guard {...{history, match, pages}}></test-route-guard>
               </div>
             }></stencil-route>
 
