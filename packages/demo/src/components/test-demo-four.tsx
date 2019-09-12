@@ -30,11 +30,11 @@ export class TestDemoFour {
           History push to {linkLocation}
         </a>
         <pre>
-          <b>this.pages</b>:<br />
+          <b>this.pages</b>:<br/>
           {JSON.stringify(this.pages, null, 2)}
         </pre>
         <pre>
-          <b>this.match</b>:<br />
+          <b>this.match</b>:<br/>
           {JSON.stringify(this.match, null, 2)}
         </pre>
         <test-deep-component />
