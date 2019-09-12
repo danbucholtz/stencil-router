@@ -1,9 +1,9 @@
-import { Component, Element, Prop, State, ComponentInterface, h, Event } from '@stencil/core';
+import { Component, Element, Prop, State, ComponentInterface, h } from '@stencil/core';
 import createHistory from '../../utils/createBrowserHistory';
 import createHashHistory from '../../utils/createHashHistory';
 import { LocationSegments, HistoryType, RouterHistory, RouteViewOptions } from '../../global/interfaces';
 import ActiveRouter, { ActiveRouterState } from '../../global/active-router';
-import { QueueApi, EventEmitter } from '@stencil/core/dist/declarations';
+import { QueueApi } from '@stencil/core/dist/declarations';
 
 const getLocation = (location: LocationSegments, root: string): LocationSegments => {
   // Remove the root URL if found at beginning of string
@@ -45,7 +45,6 @@ export class Router implements ComponentInterface {
 
   @State() location?: LocationSegments;
   @State() history?: RouterHistory;
-
 
   componentWillLoad() {
     this.history = HISTORIES[this.historyType]((this.el.ownerDocument as any).defaultView);
