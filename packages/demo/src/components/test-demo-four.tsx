@@ -13,7 +13,7 @@ export class TestDemoFour {
   handleClick(e: MouseEvent, linkLocation: string) {
     e.preventDefault();
     if (this.history) {
-      this.history.push(linkLocation, { 'blue': 'blue' });
+      this.history.push(linkLocation, { 'blue': 'blue'});
     }
   }
 
