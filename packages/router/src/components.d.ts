@@ -203,7 +203,6 @@ declare namespace LocalJSX {
   }
   interface StencilRouter extends JSXBase.HTMLAttributes<HTMLStencilRouterElement> {
     'historyType'?: HistoryType;
-    'onRouteDidChange'?: (event: CustomEvent<any>) => void;
     'root'?: string;
     'scrollTopOffset'?: number;
     'titleSuffix'?: string;
