@@ -37,7 +37,7 @@ export class TestDemoFour {
           <b>this.match</b>:<br/>
           {JSON.stringify(this.match, null, 2)}
         </pre>
-        <test-deep-component />
+        <test-deep-component/>
       </div>
     );
   }
