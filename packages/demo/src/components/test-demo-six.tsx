@@ -12,7 +12,7 @@ export class TestDemoSix {
 
   render() {
     return [
-      <span>Demo 6 Test Page<br /></span>,
+      <span>Demo 6 Test Page<br/></span>,
       <stencil-route url="/demo6/" exact={true} group="main" routeRender={
         (props: { [key: string]: any }) => {
           props;
