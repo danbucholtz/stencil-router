@@ -46,8 +46,6 @@ export class Router implements ComponentInterface {
   @State() location?: LocationSegments;
   @State() history?: RouterHistory;
 
-  @Event()
-  routeDidChange!: EventEmitter;
 
   componentWillLoad() {
     this.history = HISTORIES[this.historyType]((this.el.ownerDocument as any).defaultView);
@@ -55,7 +53,6 @@ export class Router implements ComponentInterface {
     this.history.listen((location: LocationSegments) => {
       location = getLocation(location, this.root);
       this.location = location;
-      this.routeDidChange.emit({});
     });
     this.location = getLocation(this.history.location, this.root);
   }
