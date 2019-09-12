@@ -34,7 +34,7 @@ export class Router implements ComponentInterface {
   @Element() el!: HTMLElement;
   @Prop() root: string = '/';
   @Prop({ context: 'isServer' }) private isServer!: boolean;
-  @Prop({ context: 'queue' }) queue!: QueueApi;
+  @Prop({ context: 'queue'}) queue!: QueueApi;
 
   @Prop() historyType: HistoryType = 'browser';
 
